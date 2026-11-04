@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UMKHealthyFood </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="makanan-segera.css">
+  <link rel="stylesheet" href="kalkulator.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="" class="brand__logo">
+        <span class="brand__text">UMK<span>HealthyFood</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav nav--underline" id="nav">
+        <ul>
+          <li><a href="index.html" class="active">Utama</a></li>
+          <li><a href="makanan-segera.html">Makanan Segera</a></li>
+          <li><a href="kenali-makanan.html">Kenali Makanan</a></li>
+          <li><a href="kesan-kesihatan.html">Kesan Kesihatan</a></li>
+          <li><a href="pilihan-sihat.html">Pilihan Sihat</a></li>
+          <li><a href="tentang-kami.html">Tentang Kami</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1>PILIHAN BIJAK,<br><span>HIDUP LEBIH SIHAT</span></h1>
+          <p class="hero__lead">Ketahui kesan pengambilan makanan segera terhadap kesihatan dan pelajari cara membuat pilihan makanan yang lebih baik untuk kehidupan yang lebih sihat.</p>
+          <p>Terokai risiko kesihatan akibat pengambilan makanan segera secara kerap serta pilihan makanan yang lebih sihat untuk hidangan harian anda.</p>
+          <a href="makanan-segera.html" class="btn">
+            Terokai Sekarang
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="hero__image">
+          <img src="assets/hero.png" alt="Makanan segera">
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPLORE -->
+    <section class="explore">
+      <div class="container">
+        <div class="explore__head">
+          <div>
+            <span class="eyebrow">Terokai laman web ini</span>
+            <h2>Terokai <span>Laman Web Ini</span></h2>
+          </div>
+          <p>Dapatkan maklumat lengkap untuk membuat pilihan makanan yang lebih sihat.</p>
+        </div>
+
+        <div class="cards">
+          <a href="makanan-segera.html" class="card">
+            <img src="assets/burger.png" alt="" class="card__thumb">
+            <div class="card__body">
+              <span class="icon icon--orange">
+                <svg viewBox="0 0 24 24"><path d="M4 11h16M5 15h14M6 19h12M6 11a6 6 0 0 1 12 0"/></svg>
+              </span>
+              <div>
+                <h3>Makanan segera</h3>
+                <p>Kenali apa itu makanan segera dan jenis-jenisnya.</p>
+              </div>
+            </div>
+            <span class="arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a href="kenali-makanan.html" class="card">
+            <img src="assets/makanan.png" alt="" class="card__thumb">
+            <div class="card__body">
+              <span class="icon icon--blue">
+                <svg viewBox="0 0 24 24"><path d="M8 3v7M5 3v5a3 3 0 0 0 6 0V3M8 11v10M17 3c-2 2-3 5-3 8h3v10"/></svg>
+              </span>
+              <div>
+                <h3>Nutrisi makanan</h3>
+                <p>Fahami kandungan nutrisi dalam makanan segera.</p>
+              </div>
+            </div>
+            <span class="arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a href="kesan-kesihatan.html" class="card">
+            <img src="assets/kesihatan.jpg" alt="" class="card__thumb">
+            <div class="card__body">
+              <span class="icon icon--red">
+                <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+              </span>
+              <div>
+                <h3>Kesan kesihatan</h3>
+                <p>Mengenali risiko tentang kesan kesihatan.</p>
+              </div>
+            </div>
+            <span class="arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a href="pilihan-sihat.html" class="card">
+            <img src="assets/nutrisi.jpg" alt="" class="card__thumb">
+            <div class="card__body">
+              <span class="icon icon--green">
+                <svg viewBox="0 0 24 24"><path d="M5 19c0-8 5-14 15-14 0 10-6 15-14 15M5 19c2-4 5-7 9-9"/></svg>
+              </span>
+              <div>
+                <h3>Pilihan sihat</h3>
+                <p>Alternatif makanan yang lebih sihat.</p>
+              </div>
+            </div>
+            <span class="arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+
+          <a href="tentang-kami.html" class="card">
+            <img src="assets/website.jpg" alt="" class="card__thumb">
+            <div class="card__body">
+              <span class="icon icon--purple">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><circle cx="5.5" cy="10" r="2"/><circle cx="18.5" cy="10" r="2"/><path d="M6.5 20c0-3.3 2.5-5.5 5.5-5.5s5.5 2.2 5.5 5.5"/></svg>
+              </span>
+              <div>
+                <h3>Tentang kami</h3>
+                <p>Kenali tujuan dan matlamat laman web.</p>
+              </div>
+            </div>
+            <span class="arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- KALKULATOR KALORI -->
+    <section class="calc" id="kalkulator" data-state="ok">
+      <div class="container">
+        <div class="calc__head">
+          <h2>Kalkulator <span>Kalori</span></h2>
+          <p>Pilih makanan segera yang anda ambil, atau tambah makanan sendiri, dan lihat jumlah kalori serta nutrisinya.</p>
+        </div>
+
+        <div class="calc__grid">
+          <div class="calc__left">
+
+            <!-- 1. PILIH MAKANAN -->
+            <div class="calc__card" id="calcList">
+              <div class="calc__card-head">
+                <span class="calc__step">1</span>
+                <div>
+                  <h3>Pilih makanan segera</h3>
+                  <p>Tekan + untuk tambah bilangan hidangan.</p>
+                </div>
+              </div>
+
+              <div class="calc__items">
+              <div class="calc-row" data-kcal="500" data-protein="25" data-fat="26" data-carb="42">
+                <div class="calc-row__info">
+                  <h3>Burger</h3>
+                  <p>500 Kcal / hidangan</p>
+                  <span class="calc-row__sub" hidden></span>
+                </div>
+                <div class="stepper">
+                  <button type="button" data-step="-1" aria-label="Kurangkan Burger" disabled>&minus;</button>
+                  <output aria-label="Bilangan Burger">0</output>
+                  <button type="button" data-step="1" aria-label="Tambah Burger">+</button>
+                </div>
+              </div>
+              <div class="calc-row" data-kcal="800" data-protein="32" data-fat="30" data-carb="100">
+                <div class="calc-row__info">
+                  <h3>Pizza</h3>
+                  <p>800 Kcal / hidangan</p>
+                  <span class="calc-row__sub" hidden></span>
+                </div>
+                <div class="stepper">
+                  <button type="button" data-step="-1" aria-label="Kurangkan Pizza" disabled>&minus;</button>
+                  <output aria-label="Bilangan Pizza">0</output>
+                  <button type="button" data-step="1" aria-label="Tambah Pizza">+</button>
+                </div>
+              </div>
+              <div class="calc-row" data-kcal="310" data-protein="4" data-fat="15" data-carb="41">
+                <div class="calc-row__info">
+                  <h3>Kentang goreng</h3>
+                  <p>310 Kcal / hidangan</p>
+                  <span class="calc-row__sub" hidden></span>
+                </div>
+                <div class="stepper">
+                  <button type="button" data-step="-1" aria-label="Kurangkan Kentang goreng" disabled>&minus;</button>
+                  <output aria-label="Bilangan Kentang goreng">0</output>
+                  <button type="button" data-step="1" aria-label="Tambah Kentang goreng">+</button>
+                </div>
+              </div>
+              </div>
+
+              <div class="calc__items" id="calcMore" hidden>
+              <div class="calc-row" data-kcal="600" data-protein="40" data-fat="38" data-carb="25">
+                <div class="calc-row__info">
+                  <h3>Ayam goreng</h3>
+                  <p>600 Kcal / hidangan</p>
+                  <span class="calc-row__sub" hidden></span>
+                </div>
+                <div class="stepper">
+                  <button type="button" data-step="-1" aria-label="Kurangkan Ayam goreng" disabled>&minus;</button>
+                  <output aria-label="Bilangan Ayam goreng">0</output>
+                  <button type="button" data-step="1" aria-label="Tambah Ayam goreng">+</button>
+                </div>
+              </div>
+              <div class="calc-row" data-kcal="450" data-protein="12" data-fat="20" data-carb="56">
+                <div class="calc-row__info">
+                  <h3>Maggi</h3>
+                  <p>450 Kcal / hidangan</p>
+                  <span class="calc-row__sub" hidden></span>
+                </div>
+                <div class="stepper">
+                  <button type="button" data-step="-1" aria-label="Kurangkan Maggi" disabled>&minus;</button>
+                  <output aria-label="Bilangan Maggi">0</output>
+                  <button type="button" data-step="1" aria-label="Tambah Maggi">+</button>
+                </div>
+              </div>
+              <div class="calc-row" data-kcal="760" data-protein="12" data-fat="39" data-carb="90">
+                <div class="calc-row__info">
+                  <h3>Donut</h3>
+                  <p>760 Kcal / hidangan</p>
+                  <span class="calc-row__sub" hidden></span>
+                </div>
+                <div class="stepper">
+                  <button type="button" data-step="-1" aria-label="Kurangkan Donut" disabled>&minus;</button>
+                  <output aria-label="Bilangan Donut">0</output>
+                  <button type="button" data-step="1" aria-label="Tambah Donut">+</button>
+                </div>
+              </div>
+              </div>
+
+              <button type="button" class="calc__more" id="calcMoreBtn" aria-expanded="false" aria-controls="calcMore">
+                <span id="calcMoreText">Lihat lagi (3)</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+
+              <div class="calc__custom-list" id="calcCustomWrap" hidden>
+                <h4>Makanan tambahan anda</h4>
+                <div class="calc__items" id="calcCustom"></div>
+              </div>
+            </div>
+
+            <!-- 2. TAMBAH MAKANAN SENDIRI -->
+            <form class="calc__card calc__custom" id="calcForm" autocomplete="off">
+              <div class="calc__card-head">
+                <span class="calc__step">2</span>
+                <div>
+                  <h3>Tambah makanan sendiri</h3>
+                  <p>Tak jumpa makanan anda? Masukkan nama dan kalori untuk satu hidangan.</p>
+                </div>
+              </div>
+              <div class="calc__fields">
+                <label class="field field--wide">
+                  <span>Nama makanan</span>
+                  <input type="text" id="cName" maxlength="30" required placeholder="cth: Burger ayam">
+                </label>
+                <label class="field">
+                  <span>Kalori (Kcal)</span>
+                  <input type="number" id="cKcal" min="1" max="5000" step="1" inputmode="numeric" required placeholder="cth: 550">
+                </label>
+                <label class="field">
+                  <span>Protein (g)</span>
+                  <input type="number" id="cProtein" min="0" max="500" step="0.1" inputmode="decimal" placeholder="0">
+                </label>
+                <label class="field">
+                  <span>Lemak (g)</span>
+                  <input type="number" id="cFat" min="0" max="500" step="0.1" inputmode="decimal" placeholder="0">
+                </label>
+                <label class="field">
+                  <span>Karbohidrat (g)</span>
+                  <input type="number" id="cCarb" min="0" max="500" step="0.1" inputmode="decimal" placeholder="0">
+                </label>
+              </div>
+              <p class="calc__error" id="cError" role="alert"></p>
+              <button type="submit" class="calc__add">Tambah ke senarai</button>
+            </form>
+          </div>
+
+          <!-- 3. JUMLAH KALORI -->
+          <aside class="calc__result" id="calcResult">
+            <div class="calc__card-head">
+              <span class="calc__step">3</span>
+              <div>
+                <h3>Jumlah kalori anda</h3>
+                <p>Dikira secara automatik.</p>
+              </div>
+            </div>
+
+            <div class="calc__ring" id="calcRing">
+              <div class="calc__ring-in">
+                <span class="calc__ring-label">Jumlah</span>
+                <strong id="calcTotal">0</strong>
+                <span class="calc__ring-unit">Kcal</span>
+              </div>
+            </div>
+            <p class="calc__pct"><strong id="calcPct">0%</strong> daripada keperluan harian</p>
+
+            <label class="calc__target">
+              <span>Keperluan kalori harian</span>
+              <input type="number" id="calcTarget" value="2000" min="1000" max="5000" step="50" inputmode="numeric">
+            </label>
+            <div class="calc__chips" id="calcChips">
+              <button type="button" data-target="1500">1500</button>
+              <button type="button" data-target="2000" class="is-active">2000</button>
+              <button type="button" data-target="2500">2500</button>
+            </div>
+
+            <p class="calc__msg" id="calcMsg" aria-live="polite">Tambah makanan untuk mula mengira.</p>
+
+            <ul class="calc__breakdown" id="calcBreakdown" hidden></ul>
+
+            <div class="calc__macros">
+              <div class="calc__macro"><span>Protein</span><strong id="calcProtein">0g</strong></div>
+              <div class="calc__macro"><span>Lemak</span><strong id="calcFat">0g</strong></div>
+              <div class="calc__macro"><span>Karbohidrat</span><strong id="calcCarb">0g</strong></div>
+            </div>
+
+            <button type="button" class="calc__reset" id="calcReset">Set semula</button>
+            <p class="calc__note">Anggaran untuk satu hidangan biasa. Keperluan kalori sebenar berbeza mengikut umur, jantina dan tahap aktiviti.</p>
+          </aside>
+        </div>
+
+        <!-- Bar ringkas untuk mobile -->
+        <a class="calc__mini" href="#calcResult" aria-label="Lihat ringkasan jumlah kalori">
+          <div class="calc__mini-total">
+            <span>Jumlah kalori</span>
+            <strong id="miniTotal">0</strong><small>Kcal</small>
+          </div>
+          <div class="calc__mini-bar"><span id="miniBar"></span></div>
+          <span class="calc__mini-link">Lihat</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- BANNER -->
+    <section class="banner-wrap">
+      <div class="container">
+        <div class="banner">
+          <img src="assets/sayurr.png" alt="" class="banner__img">
+          <div class="banner__text">
+            <h2>Perubahan Kecil, <span>Kesan Besar</span></h2>
+            <p>Mulakan dengan pilihan kecil untuk gaya hidup yang lebih sihat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer footer--seg">
+    <div class="seg-wide footer__inner">
+      <a href="index.html" class="brand brand--light">
+        <img src="assets/logo.png" alt="" class="brand__logo">
+        <span class="brand__text">UMK<span>HealthyFood</span></span>
+      </a>
+
+      <ul class="footer__nav">
+        <li><a href="index.html">Utama</a></li>
+        <li><a href="makanan-segera.html">Makanan Segera</a></li>
+        <li><a href="kenali-makanan.html">Kenali Makanan</a></li>
+        <li><a href="kesan-kesihatan.html">Kesan Kesihatan</a></li>
+        <li><a href="pilihan-sihat.html">Pilihan Sihat</a></li>
+        <li><a href="tentang-kami.html">Tentang Kami</a></li>
+      </ul>
+
+      <p class="footer__copy">&copy; 2026 UMKHealthyFood. Semua hak cipta terpelihara.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+
+    // ---------- KALKULATOR KALORI ----------
+    (function () {
+      const root = document.getElementById('kalkulator');
+      const list = document.getElementById('calcList');
+      const more = document.getElementById('calcMore');
+      const moreBtn = document.getElementById('calcMoreBtn');
+      const moreText = document.getElementById('calcMoreText');
+      const customBox = document.getElementById('calcCustom');
+      const customWrap = document.getElementById('calcCustomWrap');
+      const form = document.getElementById('calcForm');
+      const errorEl = document.getElementById('cError');
+      const targetInput = document.getElementById('calcTarget');
+      const chips = document.getElementById('calcChips');
+      const ring = document.getElementById('calcRing');
+      const msg = document.getElementById('calcMsg');
+      const breakdown = document.getElementById('calcBreakdown');
+      const miniBar = document.getElementById('miniBar');
+      const MAX_QTY = 20;
+      const MAX_CUSTOM = 10;
+      const STORAGE_KEY = 'umkhf-makanan-sendiri';
+
+      const round1 = n => Math.round(n * 10) / 10;
+      const fmt = n => n.toLocaleString('ms-MY');
+
+      // ----- makanan tambahan pengguna -----
+      function loadCustom() {
+        try {
+          const data = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+          if (!Array.isArray(data)) return [];
+          return data.filter(i => i && typeof i.name === 'string' && Number.isFinite(i.kcal)).slice(0, MAX_CUSTOM);
+        } catch (e) { return []; }
+      }
+      function saveCustom() {
+        const items = [...customBox.querySelectorAll('.calc-row')].map(row => ({
+          name: row.querySelector('h3').firstChild.textContent,
+          kcal: Number(row.dataset.kcal),
+          protein: Number(row.dataset.protein),
+          fat: Number(row.dataset.fat),
+          carb: Number(row.dataset.carb)
+        }));
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(items)); } catch (e) { /* abaikan */ }
+      }
+
+      function el(tag, className, text) {
+        const node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text !== undefined) node.textContent = text;
+        return node;
+      }
+
+      function createRow(item) {
+        const row = el('div', 'calc-row calc-row--custom');
+        row.dataset.kcal = item.kcal;
+        row.dataset.protein = item.protein || 0;
+        row.dataset.fat = item.fat || 0;
+        row.dataset.carb = item.carb || 0;
+
+        const title = el('h3', '', item.name);
+        title.append(el('span', 'calc-row__tag', 'Tambahan'));
+        const sub = el('span', 'calc-row__sub');
+        sub.hidden = true;
+        const info = el('div', 'calc-row__info');
+        info.append(title, el('p', '', item.kcal + ' Kcal / hidangan'), sub);
+
+        const stepper = el('div', 'stepper');
+        const minus = el('button', '', '\u2212');
+        minus.type = 'button'; minus.dataset.step = '-1'; minus.disabled = true;
+        minus.setAttribute('aria-label', 'Kurangkan ' + item.name);
+        const out = el('output', '', '0');
+        out.setAttribute('aria-label', 'Bilangan ' + item.name);
+        const plus = el('button', '', '+');
+        plus.type = 'button'; plus.dataset.step = '1';
+        plus.setAttribute('aria-label', 'Tambah ' + item.name);
+        stepper.append(minus, out, plus);
+
+        const remove = el('button', 'calc-row__remove', '\u00D7');
+        remove.type = 'button'; remove.dataset.remove = '1';
+        remove.setAttribute('aria-label', 'Buang ' + item.name);
+
+        const actions = el('div', 'calc-row__actions');
+        actions.append(stepper, remove);
+        row.append(info, actions);
+        return row;
+      }
+
+      function syncCustomWrap() {
+        customWrap.hidden = customBox.children.length === 0;
+      }
+
+      // ----- kiraan & paparan -----
+      function update() {
+        let kcal = 0, protein = 0, fat = 0, carb = 0;
+        const picked = [];
+
+        list.querySelectorAll('.calc-row').forEach(row => {
+          const q = Number(row.querySelector('output').textContent);
+          const rowKcal = q * Number(row.dataset.kcal);
+          kcal += rowKcal;
+          protein += q * Number(row.dataset.protein);
+          fat += q * Number(row.dataset.fat);
+          carb += q * Number(row.dataset.carb);
+
+          row.classList.toggle('is-selected', q > 0);
+          row.querySelector('[data-step="-1"]').disabled = q <= 0;
+          row.querySelector('[data-step="1"]').disabled = q >= MAX_QTY;
+
+          const sub = row.querySelector('.calc-row__sub');
+          sub.hidden = q === 0;
+          sub.textContent = q > 0 ? q + ' \u00D7 ' + row.dataset.kcal + ' = ' + fmt(rowKcal) + ' Kcal' : '';
+
+          if (q > 0) picked.push({ name: row.querySelector('h3').firstChild.textContent, q: q, kcal: rowKcal });
+        });
+
+        const target = Math.max(Number(targetInput.value) || 2000, 1);
+        const pct = Math.round((kcal / target) * 100);
+        const state = pct > 100 ? 'over' : pct >= 75 ? 'warn' : 'ok';
+
+        root.dataset.state = state;
+        ring.style.setProperty('--pct', Math.min(pct, 100));
+        document.getElementById('calcTotal').textContent = fmt(kcal);
+        document.getElementById('miniTotal').textContent = fmt(kcal);
+        document.getElementById('calcPct').textContent = pct + '%';
+        miniBar.style.width = Math.min(pct, 100) + '%';
+        document.getElementById('calcProtein').textContent = round1(protein) + 'g';
+        document.getElementById('calcFat').textContent = round1(fat) + 'g';
+        document.getElementById('calcCarb').textContent = round1(carb) + 'g';
+
+        if (kcal === 0) {
+          msg.textContent = 'Tambah makanan untuk mula mengira.';
+        } else if (state === 'over') {
+          msg.textContent = 'Melebihi keperluan harian anda. Cuba kurangkan atau pilih alternatif lebih sihat.';
+        } else if (state === 'warn') {
+          msg.textContent = 'Hampir mencapai had keperluan harian anda.';
+        } else {
+          msg.textContent = 'Masih dalam had keperluan harian anda.';
+        }
+
+        // ringkasan makanan yang dipilih
+        breakdown.textContent = '';
+        picked.forEach(p => {
+          const li = el('li');
+          li.append(el('span', '', p.name + ' \u00D7 ' + p.q), el('strong', '', fmt(p.kcal) + ' Kcal'));
+          breakdown.append(li);
+        });
+        breakdown.hidden = picked.length === 0;
+
+        chips.querySelectorAll('button').forEach(b => {
+          b.classList.toggle('is-active', Number(b.dataset.target) === target);
+        });
+      }
+
+      // ----- Lihat lagi / Tunjuk kurang -----
+      const moreCount = more.querySelectorAll('.calc-row').length;
+      moreBtn.addEventListener('click', () => {
+        const opening = more.hidden;
+        more.hidden = !opening;
+        moreBtn.setAttribute('aria-expanded', String(opening));
+        moreText.textContent = opening ? 'Tunjuk kurang' : 'Lihat lagi (' + moreCount + ')';
+      });
+
+      // ----- klik + / - / buang (event delegation) -----
+      list.addEventListener('click', e => {
+        const btn = e.target.closest('button');
+        const row = btn && btn.closest('.calc-row');
+        if (!row) return;
+        if (btn.dataset.remove) {
+          row.remove();
+          syncCustomWrap();
+          saveCustom();
+        } else if (btn.dataset.step) {
+          const out = row.querySelector('output');
+          const next = Number(out.textContent) + Number(btn.dataset.step);
+          out.textContent = Math.min(Math.max(next, 0), MAX_QTY);
+        }
+        update();
+      });
+
+      // ----- borang makanan sendiri -----
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        errorEl.textContent = '';
+
+        const name = document.getElementById('cName').value.trim();
+        const kcal = Number(document.getElementById('cKcal').value);
+        const protein = Number(document.getElementById('cProtein').value) || 0;
+        const fat = Number(document.getElementById('cFat').value) || 0;
+        const carb = Number(document.getElementById('cCarb').value) || 0;
+
+        if (!name) { errorEl.textContent = 'Sila masukkan nama makanan.'; return; }
+        if (!Number.isFinite(kcal) || kcal < 1 || kcal > 5000) { errorEl.textContent = 'Kalori mesti antara 1 hingga 5000 Kcal.'; return; }
+        if (protein < 0 || fat < 0 || carb < 0 || protein > 500 || fat > 500 || carb > 500) { errorEl.textContent = 'Nilai nutrisi mesti antara 0 hingga 500 g.'; return; }
+        if (customBox.children.length >= MAX_CUSTOM) { errorEl.textContent = 'Maksimum ' + MAX_CUSTOM + ' makanan tambahan. Buang satu dahulu.'; return; }
+
+        const row = createRow({ name: name, kcal: Math.round(kcal), protein: protein, fat: fat, carb: carb });
+        row.querySelector('output').textContent = 1; // terus dikira 1 hidangan
+        customBox.appendChild(row);
+        syncCustomWrap();
+        saveCustom();
+        form.reset();
+        document.getElementById('cName').focus();
+        update();
+      });
+
+      // ----- sasaran kalori harian -----
+      targetInput.addEventListener('input', update);
+      chips.addEventListener('click', e => {
+        const b = e.target.closest('button');
+        if (!b) return;
+        targetInput.value = b.dataset.target;
+        update();
+      });
+
+      document.getElementById('calcReset').addEventListener('click', () => {
+        list.querySelectorAll('.calc-row output').forEach(o => { o.textContent = 0; });
+        update();
+      });
+
+      loadCustom().forEach(item => customBox.appendChild(createRow(item)));
+      syncCustomWrap();
+      update();
+    })();
+  </script>
+</body>
+</html>

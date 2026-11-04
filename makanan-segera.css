@@ -1,0 +1,190 @@
+/* =========================================================
+   makanan-segera.css
+   Letak SELEPAS style.css. Guna variable & gaya asas yang sama
+   (warna, radius, shadow, .container, .navbar, .brand, .nav).
+   Fail ini juga dikongsi oleh halaman lain untuk navbar (garis
+   bawah merah + ikon carian) dan asas footer (.footer--seg).
+   ========================================================= */
+
+/* Lebar bekas footer (sama dengan .ks-wide di kesan-kesihatan.css) */
+.seg-wide { width: min(1440px, 100% - 40px); margin-inline: auto; }
+
+/* ---------- NAVBAR (tambahan: underline aktif + ikon carian) ---------- */
+.nav--underline a.active {
+  background: transparent;
+  color: var(--red);
+  border-radius: 0;
+  padding-inline: 4px;
+  margin-inline: 12px;
+  box-shadow: inset 0 -2px 0 var(--red);
+}
+.nav--underline a:hover { background: transparent; color: var(--red); }
+
+.nav-search {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: var(--navy);
+  border-radius: 50%;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+.nav-search:hover { background: var(--blue-soft); }
+.nav-search svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ---------- HERO ---------- */
+.seg-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 302px;
+  background:
+    radial-gradient(circle at 5% 10%, rgba(120, 180, 240, 0.35), transparent 22%),
+    linear-gradient(90deg, #cfe6fb 0%, #bfdcf8 55%, #d4e8fa 100%);
+}
+.seg-hero__inner {
+  position: relative;
+  z-index: 2;
+  min-height: 302px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 46%);
+  align-items: center;
+  gap: 48px;
+}
+.seg-hero__text { max-width: 560px; padding: 32px 0; }
+.seg-hero h1 {
+  font-size: clamp(2.8rem, 6vw, 4.6rem);
+  line-height: 0.95;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--navy);
+  margin-bottom: 18px;
+}
+.seg-hero h1 span { display: block; color: var(--red); }
+.seg-hero p { font-size: 1.05rem; line-height: 1.7; color: var(--navy); max-width: 520px; }
+
+.seg-hero__leaf-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  height: 180px;
+  background: url("assets/daun-kiri.png") left bottom / contain no-repeat;
+  z-index: 1;
+}
+.seg-hero__image {
+  position: relative;
+  height: 230px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.55);
+  overflow: hidden;
+}
+.seg-hero__image img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: transparent;
+}
+
+/* ---------- INFO BOX ---------- */
+.seg-main { padding: 18px 0 40px; background: var(--white); }
+
+.seg-info {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1px 1fr;
+  align-items: center;
+  gap: 28px;
+  padding: 22px 80px 22px 54px;
+  background: #fde4e4;
+  border-radius: 20px;
+}
+.seg-info__icon {
+  position: relative;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: var(--red);
+  display: grid;
+  place-items: center;
+  color: var(--white);
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.seg-info__line { width: 1px; height: 80px; background: var(--red); opacity: 0.7; }
+.seg-info h2 { font-size: 1.45rem; font-weight: 800; letter-spacing: -0.02em; color: var(--red); margin-bottom: 2px; }
+.seg-info p { font-size: 0.98rem; line-height: 1.6; max-width: 800px; }
+
+/* ---------- JENIS-JENIS ---------- */
+.seg-types__head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 18px 0 18px 14px;
+}
+.seg-types__head h2 { font-size: clamp(1.6rem, 3.5vw, 2.3rem); font-weight: 800; letter-spacing: -0.03em; color: var(--navy); }
+
+.seg-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px 26px; }
+.seg-card {
+  display: block;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #d3e7fb;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.seg-card:hover { transform: translateY(-3px); box-shadow: 0 10px 26px rgba(15, 42, 82, 0.16); }
+.seg-card img { width: 100%; height: 180px; object-fit: contain; background: #e9f3fd; }
+.seg-card h3 { padding: 11px 12px 13px; text-align: center; font-size: 1.1rem; font-weight: 800; color: var(--navy); letter-spacing: -0.01em; }
+
+/* ---------- FOOTER (dikongsi: .footer--seg; hak cipta: .footer__copy) ---------- */
+.footer--seg .footer__inner { gap: 32px; }
+.footer--seg .brand__text { font-size: 1.3rem; }
+.footer--seg .footer__nav li + li { border-left: 0; }
+.footer--seg .footer__nav a { padding: 4px 18px; font-size: 0.8rem; opacity: 0.85; }
+.footer--seg .footer__nav a.active { opacity: 1; font-weight: 600; box-shadow: inset 0 -2px 0 var(--white); padding-inline: 0; margin-inline: 18px; }
+.footer--seg .footer__nav a:hover { text-decoration: none; opacity: 1; }
+.footer__copy { font-size: 0.72rem; opacity: 0.85; white-space: nowrap; }
+
+/* ---------- TABLET ---------- */
+@media (max-width: 1024px) {
+  .seg-grid { gap: 20px; }
+  .seg-info { padding-right: 70px; }
+  .footer__copy { white-space: normal; }
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 860px) {
+  .nav--underline a.active { margin-inline: 0; box-shadow: none; background: var(--blue-soft); color: var(--red); padding: 12px 14px; border-radius: 10px; }
+  .navbar__inner { gap: 8px; }
+  .nav-search { margin-left: auto; }
+
+  .seg-hero { min-height: 0; }
+  .seg-hero__inner { min-height: 0; grid-template-columns: 1fr; gap: 16px; padding-bottom: 20px; }
+  .seg-hero__image { height: 190px; }
+  .seg-hero__text { max-width: none; padding: 28px 0 0; }
+  .seg-hero__leaf-left { display: none; }
+
+  .seg-info { grid-template-columns: auto 1fr; padding: 20px; gap: 16px; }
+  .seg-info__line { display: none; }
+  .seg-info__icon { width: 64px; height: 64px; font-size: 2.2rem; }
+
+  .seg-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .footer--seg .footer__nav a.active { margin-inline: 12px; padding-inline: 0; }
+}
+
+@media (max-width: 560px) {
+  .seg-grid { grid-template-columns: 1fr; }
+  .seg-card img { height: 170px; }
+  .seg-info { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+}

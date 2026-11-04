@@ -1,0 +1,156 @@
+/* =========================================================
+   tentang-kami.css
+   Muatkan selepas style.css DAN makanan-segera.css
+   (navbar underline, ikon carian & footer dikongsi dari situ).
+   ========================================================= */
+
+.tk-wide { width: min(1400px, 100% - 40px); margin-inline: auto; }
+
+/* ---------- HERO ---------- */
+.tk-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 268px;
+  background:
+    radial-gradient(circle at 6% 30%, rgba(255, 255, 255, 0.5), transparent 28%),
+    linear-gradient(90deg, #c4e2fa 0%, #d3e9fb 50%, #e2f0fb 100%);
+}
+.tk-hero__inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 46%);
+  align-items: center;
+  gap: 48px;
+  padding: 28px 0;
+}
+.tk-hero__text { max-width: 620px; }
+.tk-hero h1 {
+  position: relative;
+  display: inline-block;
+  font-size: clamp(2.4rem, 5.4vw, 3.6rem);
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--navy);
+  margin-bottom: 14px;
+}
+.tk-hero h1 span { color: var(--green); }
+.tk-hero p { font-size: 1.05rem; line-height: 1.65; color: var(--navy); }
+
+.tk-hero__leaf-left {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 140px;
+  height: 240px;
+  background: url("assets/daun-kiri.png") left center / contain no-repeat;
+  z-index: 1;
+}
+.tk-hero__image {
+  position: relative;
+  height: 220px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.55);
+  overflow: hidden;
+}
+.tk-hero__image::before {
+  content: "Letak gambar landscape di sini";
+  position: absolute;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgba(15, 42, 82, 0.5);
+}
+.tk-hero__image img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: transparent;
+}
+
+/* ---------- OBJEKTIF ---------- */
+.tk-objective { padding: 8px 0 30px; background: var(--white); }
+.tk-title { position: relative; display: inline-block; margin: 0 0 14px 0; font-size: clamp(1.7rem, 4vw, 2.4rem); font-weight: 800; letter-spacing: -0.03em; color: var(--navy); }
+.tk-title span { color: #1a73e8; }
+
+.tk-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.tk-card { background: #e2f0fd; border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); }
+.tk-card__img { display: block; width: 100%; height: 250px; object-fit: cover; object-position: center 15%; }
+.tk-card:nth-child(1) .tk-card__img { object-position: center 50%; }
+.tk-card:nth-child(2) .tk-card__img { object-position: center 15%; }
+.tk-card:nth-child(3) .tk-card__img { object-fit: contain; object-position: center; background: #e2f0fd; padding-top: 6px; }
+.tk-card__body { position: relative; display: flex; align-items: center; gap: 22px; padding: 14px 20px 18px 16px; min-height: 84px; }
+.tk-card__icon {
+  width: 72px;
+  height: 72px;
+  margin-top: -28px;
+  border-radius: 50%;
+  background: var(--white);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.tk-card__icon svg { width: 40px; height: 40px; fill: none; stroke: #1a73e8; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.tk-card__icon svg.fill { fill: #1a73e8; stroke: none; }
+.tk-card__icon svg.green { fill: none; stroke: #1fa44a; }
+.tk-card p { font-size: 1.02rem; font-weight: 500; line-height: 1.45; color: var(--navy); }
+
+/* ---------- KENAPA ---------- */
+/* ---------- KENAPA ---------- */
+.tk-why-wrap { padding: 0 0 26px; background: var(--white); }
+.tk-why {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  min-height: 180px;
+  background: linear-gradient(90deg, #fde1e1 0%, #fdd5d6 100%);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.tk-why__text { padding: 26px 32px; text-align: center; }
+.tk-why h2 { position: relative; display: inline-block; font-size: clamp(1.6rem, 3.6vw, 2.2rem); font-weight: 800; letter-spacing: -0.03em; color: var(--navy); margin-bottom: 10px; }
+.tk-why h2 span { color: var(--red); }
+.tk-why p { font-size: 1.05rem; line-height: 1.6; color: var(--navy); max-width: 900px; margin-inline: auto; }
+.tk-why__image { align-self: stretch; }
+.tk-why__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 180px;
+  object-fit: cover;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 25%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 25%);
+}
+
+/* ---------- FOOTER (hak cipta + pemisah) ---------- */
+.footer__copy { font-size: 0.72rem; opacity: 0.85; white-space: nowrap; padding-left: 28px; border-left: 1px solid rgba(255, 255, 255, 0.3); }
+
+/* ---------- TABLET ---------- */
+@media (max-width: 1024px) {
+  .tk-cards { gap: 20px; }
+  .tk-card__body { gap: 14px; padding-right: 14px; }
+  .tk-card__icon { width: 60px; height: 60px; }
+  .tk-card__icon svg { width: 32px; height: 32px; }
+  .footer__copy { white-space: normal; border-left: 0; padding-left: 0; }
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 860px) {
+  .tk-hero { min-height: 0; }
+  .tk-hero__leaf-left { display: none; }
+  .tk-hero__inner { grid-template-columns: 1fr; gap: 20px; }
+  .tk-hero__image { height: 190px; }
+
+  .tk-cards { grid-template-columns: 1fr; }
+  .tk-card__img { height: 150px; }
+
+  .tk-why { grid-template-columns: 1fr; }
+  .tk-why__text { padding: 22px 20px 8px; }
+  .tk-why__image img { min-height: 0; height: 170px; -webkit-mask-image: none; mask-image: none; }
+}

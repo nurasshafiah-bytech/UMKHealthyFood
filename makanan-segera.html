@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makanan Segera | UMKHealthyFood</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="makanan-segera.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="" class="brand__logo">
+        <span class="brand__text">UMK<span>HealthyFood</span></span>
+      </a>
+
+      <nav class="nav nav--underline" id="nav">
+        <ul>
+          <li><a href="index.html">Utama</a></li>
+          <li><a href="makanan-segera.html" class="active">Makanan Segera</a></li>
+          <li><a href="kenali-makanan.html">Kenali Makanan</a></li>
+          <li><a href="kesan-kesihatan.html">Kesan Kesihatan</a></li>
+          <li><a href="pilihan-sihat.html">Pilihan Sihat</a></li>
+          <li><a href="tentang-kami.html">Tentang Kami</a></li>
+        </ul>
+      </nav>
+
+      
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="seg-hero">
+      <div class="seg-hero__leaf-left" aria-hidden="true"></div>
+
+      <div class="container seg-hero__inner">
+        <div class="seg-hero__text">
+          <h1>Makanan <span>Segera</span></h1>
+          <p>Makanan segera ialah makanan yang disediakan dan dihidangkan dengan cepat serta biasanya tinggi kandungan kalori, lemak, garam dan gula yang tinggi.</p>
+        </div>
+        <div class="seg-hero__image">
+          <img src="assets/burger2.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="seg-main">
+      <div class="container">
+
+        <!-- APA ITU -->
+        <div class="seg-info">
+          <div class="seg-info__icon" aria-hidden="true">?</div>
+          <div class="seg-info__line"></div>
+          <div>
+            <h2>Apa Itu Makanan Segera?</h2>
+            <p>Makanan segera merupakan makanan yang diproses, disediakan dengan cepat dan biasanya tinggi kandungan kalori, lemak, garam dan gula.</p>
+          </div>
+        </div>
+
+        <!-- JENIS-JENIS -->
+        <div class="seg-types__head">
+          <h2>Jenis-Jenis Makanan Segera</h2>
+        </div>
+
+        <div class="seg-grid">
+          <a href="#" class="seg-card">
+            <img src="assets/burger4.png" alt="Burger">
+            <h3>Burger</h3>
+          </a>
+          <a href="#" class="seg-card">
+            <img src="assets/ayam.png" alt="Ayam Goreng">
+            <h3>Ayam Goreng</h3>
+          </a>
+          <a href="#" class="seg-card">
+            <img src="assets/pizza.png" alt="Pizza">
+            <h3>Pizza</h3>
+          </a>
+          <a href="#" class="seg-card">
+            <img src="assets/maggi.png" alt="Mi Segera">
+            <h3>Mi Segera</h3>
+          </a>
+          <a href="#" class="seg-card">
+            <img src="assets/kentang.png" alt="Kentang Goreng">
+            <h3>Kentang Goreng</h3>
+          </a>
+          <a href="#" class="seg-card">
+            <img src="assets/donut2.png" alt="Donut">
+            <h3>Donut</h3>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer footer--seg">
+    <div class="seg-wide footer__inner">
+      <a href="index.html" class="brand brand--light">
+        <img src="assets/logo.png" alt="" class="brand__logo">
+        <span class="brand__text">UMK<span>HealthyFood</span></span>
+      </a>
+
+      <ul class="footer__nav">
+        <li><a href="index.html">Utama</a></li>
+        <li><a href="makanan-segera.html">Makanan Segera</a></li>
+        <li><a href="kenali-makanan.html">Kenali Makanan</a></li>
+        <li><a href="kesan-kesihatan.html">Kesan Kesihatan</a></li>
+        <li><a href="pilihan-sihat.html">Pilihan Sihat</a></li>
+        <li><a href="tentang-kami.html">Tentang Kami</a></li>
+      </ul>
+
+      <p class="footer__copy">&copy; 2026 UMKHealthyFood. Semua hak cipta terpelihara.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+/* =========================================================
+   kesan-kesihatan.css
+   Muatkan selepas style.css DAN makanan-segera.css
+   (navbar underline, ikon carian & footer dikongsi dari situ).
+   ========================================================= */
+
+.ks-wide { width: min(1440px, 100% - 40px); margin-inline: auto; }
+
+/* ---------- HERO ---------- */
+.ks-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 202px;
+  color: var(--white);
+  background:
+    radial-gradient(ellipse at 18% 120%, rgba(255, 255, 255, 0.07), transparent 55%),
+    linear-gradient(100deg, #b5121f 0%, #d91a2b 40%, #e5202e 70%, #d8283a 100%);
+}
+.ks-hero__inner { position: relative; z-index: 2; padding: 38px 0 36px; }
+.ks-hero__text { max-width: 640px; margin-inline: auto; text-align: center; }
+.ks-hero h1 { font-size: clamp(2.4rem, 5vw, 3.4rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 14px; }
+.ks-hero p { font-size: 1.05rem; line-height: 1.65; }
+.ks-hero__image { position: absolute; top: 0; right: 0; bottom: 0; width: 46%; z-index: 1; }
+.ks-hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: rgba(255, 255, 255, 0.18);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 25%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 25%);
+}
+
+/* ---------- MASALAH KESIHATAN ---------- */
+.ks-problems { padding: 26px 0 30px; background: var(--white); }
+.ks-title { position: relative; text-align: center; margin-bottom: 30px; }
+.ks-title h2 { display: inline-block; position: relative; font-size: clamp(1.5rem, 3.4vw, 2.1rem); font-weight: 800; letter-spacing: -0.02em; color: var(--navy); }
+.ks-title h2 span { color: var(--red); }
+
+.ks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px 40px; }
+.ks-card {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  align-items: center;
+  min-height: 154px;
+  background: #fdeeee;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(15, 42, 82, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.ks-card:hover { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(15, 42, 82, 0.16); }
+.ks-card img { width: 100%; height: 100%; min-height: 154px; object-fit: cover; }
+.ks-card__body { padding: 14px 18px; }
+.ks-card h3 { font-size: 1.3rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.2; color: var(--navy); margin-bottom: 8px; }
+.ks-card p { font-size: 0.88rem; line-height: 1.55; color: var(--muted); }
+
+/* ---------- KESAN TERHADAP PELAJAR ---------- */
+.ks-impact-wrap { padding: 0 0 22px; background: var(--white); }
+.ks-impact { padding: 22px 36px 26px; background: #c9e4fb; border-radius: 18px; box-shadow: var(--shadow); }
+.ks-impact h2 { position: relative; display: inline-block; font-size: clamp(1.5rem, 3.4vw, 2.1rem); font-weight: 800; letter-spacing: -0.02em; color: var(--navy); margin-bottom: 12px; }
+.ks-impact h2 span { color: var(--red); }
+
+.ks-impact__list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.ks-item { display: flex; align-items: center; gap: 14px; }
+.ks-item img {
+  width: 78px;
+  height: 78px;
+  flex-shrink: 0;
+  object-fit: contain;
+  padding: 10px;
+  border-radius: 50%;
+  background: #f1f7fd;
+}
+.ks-item h3 { font-size: 1rem; font-weight: 800; line-height: 1.25; color: var(--navy); margin-bottom: 4px; }
+.ks-item p { font-size: 0.86rem; line-height: 1.5; color: var(--muted); }
+
+/* ---------- FOOTER (tambahan: hak cipta) ---------- */
+.footer__copy { font-size: 0.72rem; opacity: 0.85; white-space: nowrap; }
+
+/* ---------- TABLET ---------- */
+@media (max-width: 1180px) {
+  .ks-grid { gap: 20px; }
+  .ks-card { grid-template-columns: 150px 1fr; }
+  .ks-impact__list { grid-template-columns: repeat(2, 1fr); gap: 22px; }
+}
+@media (max-width: 1024px) {
+  .ks-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer__copy { white-space: normal; }
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 860px) {
+  .ks-hero { min-height: 0; }
+  .ks-hero__inner { padding: 28px 0 20px; }
+  .ks-hero__image { position: relative; width: 100%; height: 170px; }
+  .ks-hero__image img { -webkit-mask-image: none; mask-image: none; }
+  .ks-impact { padding: 20px 18px 24px; }
+}
+@media (max-width: 640px) {
+  .ks-grid { grid-template-columns: 1fr; }
+  .ks-card { grid-template-columns: 130px 1fr; }
+  .ks-impact__list { grid-template-columns: 1fr; }
+}
